@@ -67,7 +67,7 @@ const adminLogin = async (req, res) => {
     const token = jwt.sign(
       {
         id: admin._id },
-      process.env.JWT_secret
+      "Florence#random@secret"
     );
 
     return res.status(200).json({
